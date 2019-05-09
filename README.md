@@ -1,8 +1,15 @@
 # Maskie
 A JQuery phone input mask for HTML
 
+At the moment the mask only support phones from:
+* United States
+* México
+* Dominican Republic
+
+We'll be adding more countries in the future. If you want your country to be available now, just let us a message at contacto@engranaje.me
+
 ## Getting started
-To include Maskie into your project you just need to include the **Maskie.js** file inside **src** folder, and include the **mask.html** file into your form, or just copy the **mask.html** content into your form.
+To include Maskie into your project you just need to include the **Maskie.js** file inside **dist** folder, and include the **mask.html** file into your form, or just copy the **mask.html** content into your form.
 It's important to use the content inside the mask as it is, because the code will only work with it's properties.
 
 This project works wih JQuery, so your need to include it first.
