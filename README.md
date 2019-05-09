@@ -13,6 +13,14 @@ To configure the mask you just need:
 
 # Authors
 * **Engranaje's team**
+  * [Harold Abreu](https://github.com/Harverbo)
+  * Renelis Abreu
+  * Lleurys De León
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.txt) file for details
+
+## Donation
+If you think this is useful and you want to help us develop more widgets, help us stay awake by buying us a cup of tea :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QSWLDMN5EATE6)
