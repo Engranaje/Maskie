@@ -25,8 +25,8 @@ To configure the mask you just need:
 # Authors
 * **Engranaje's team**
   * [Harold Abreu](https://github.com/Harverbo)
-  * Renelis Abreu
-  * Lleurys De León
+  * [Renelis Abreu](https://github.com/renelis)
+  * [Lleurys De León](https://github.com/lleurys21)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.txt) file for details
