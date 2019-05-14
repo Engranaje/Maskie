@@ -16,7 +16,7 @@ It's important to use the content inside the mask as it is, because the code wil
 
 We added the mask inside a div with class `d-flex`, so if you want both select and input to be together, just apply a `display: flex` style.
 
-This project works wih JQuery, so your need to include it first.
+This project works wih JQuery, so you'll need to include it first.
 
 To configure the mask you just need:
 1. Change the input type phone's **data-country** value to your country three digit's ISO code.
