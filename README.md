@@ -13,7 +13,7 @@ At the moment the mask only support phones from:
 We'll be adding more countries in the future. If you want your country to be available now, just let us a message at contacto@engranaje.me.
 
 ## Getting started
-To include Maskie in your project, you only need to include the **Maskie.js** field inside **dist** folder before your personal scripts, then initialize it.
+To include Maskie in your project, you only need to include the **Maskie.min.js** field inside **dist** folder before your personal scripts, then initialize it.
 
 To initialize Maskie with default values, you just need to call the function Maskie();`.
 

@@ -11,7 +11,7 @@ Hasta el momento, el modo de etiquetas «select» de la máscara solo soporta te
 Estaremos agregando más ciudades en el futuro. Si quieres que tu ciudad esté disponible ahora, tan solo déjanos un mensaje a contacto@engranaje.me.
 
 ## Instrucciones
-Para incluir Maskie a tu proyecto tan solo tienes que incluir antes de tus scripts personalizados el archivo **Maskie.js** que se encuentra dentro de la carpeta **dist**, luego inicializar Maskie en tus scripts.
+Para incluir Maskie a tu proyecto tan solo tienes que incluir antes de tus scripts personalizados el archivo **Maskie.min.js** que se encuentra dentro de la carpeta **dist**, luego inicializar Maskie en tus scripts.
 
 Para inicializar con los valores por defectos tan solo hay que llamar la función `Maskie();`.
 
