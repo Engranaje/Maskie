@@ -1,7 +1,9 @@
 # Maskie
-Maskie es una máscara de teléfono para HTML desarrollada con JQuery.
+Maskie es una máscara de teléfono para HTML desarrollada con Vanilla JavaScript.
 
-Hasta el momento la máscara solo soporta teléfonos de:
+Puedes ver capturas de pantalla en la carpeta [screenshots](screenshots).
+
+Hasta el momento, el modo de etiquetas «select» de la máscara solo soporta teléfonos de:
 * Estados Unidos
 * México
 * República Dominicana
@@ -9,18 +11,23 @@ Hasta el momento la máscara solo soporta teléfonos de:
 Estaremos agregando más ciudades en el futuro. Si quieres que tu ciudad esté disponible ahora, tan solo déjanos un mensaje a contacto@engranaje.me.
 
 ## Instrucciones
-Para incluir Maskie a tu proyecto tan solo tienes que incluir el archivo **Maskie.js** que se encuentra dentro de la carpeta **dist**, e incluir el archivo **mask.html** en tu formulario de HTML, o tan solo copiar su contenido en tu formulario.
-Es importante que utilices el contenido de la máscara tan cual, porque el código solo funcionará con sus propiedades como están.
+Para incluir Maskie a tu proyecto tan solo tienes que incluir antes de tus scripts personalizados el archivo **Maskie.js** que se encuentra dentro de la carpeta **dist**, luego inicializar Maskie en tus scripts.
 
-Agregamos la máscara dentro de un div con la clase `d-flex`, así que, si quieres que el select y el input estén juntos, tan solo aplica el estilo `display: flex` al div.
+Para inicializar con los valores por defectos tan solo hay que llamar la función `Maskie();`.
 
-Este proyecto funciona con JQuery, por lo que tienes que incluirlo primero.
+Las distintas opciones que se le pueden pasar a la función son:
+1. `selector` Que permite especificar la clase de los inputs que serán cambiados por las etiquetas de Maskie. El valor por defecto es *maskie-phone*.
+2. `codeType` Que permite especificar el tipo de etiqueta para el código del teléfono. Los posibles valores son `input` o `select`; el valor por defecto es *select*.
+3. `country` Que permite especificar las opciones del menú de códigos de teléfono en caso de que sea de tipo *select*. El valor debe de ser el código de tres dígitos del país. El valor por defecto es *USA*.
 
-Para configurar la máscara necesitas:
-1. Cambiar el valor del atributo **data-country** del input de tipo "phone" al código ISO de tres dígitos de tu ciudad.
-2. Agregar los valores requeridos de los atributos **name** y **id** a los inputs y selects si quieres obtener por separado los valores del teléfono o aplicar estilos personalizados.
-3. Agregar cualquier otro atributo requerido, como **required**, si se desea.
-4. Obtener el valor del input oculto **planephone**, debido a que ese es el input con el valor completo del teléfono sin los caracteres especiales. O simpletemente concatenar los valores del select y el input si se desea el teléfono con los demás caracteres.
+Ejemplo de configuración:
+```
+Maskie({
+    selector: clase-de-input,
+    codeType: 'select',
+    country: 'DOM'
+});
+```
 
 # Autores
 * **El equipo de Engranaje**

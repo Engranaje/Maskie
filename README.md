@@ -1,7 +1,9 @@
 # Maskie
-**For the Spanish Readme [click here](Readme_es.md)**
+**Para leer el Readme es español [haz clic aquí](Readme_es.md)**
 
-Maskie is a JQuery phone input mask for HTML.
+Maskie is a Vanilla JavaScript phone input mask for HTML.
+
+You can se screenshot inside the [screenshots](screenshots) folder.
 
 At the moment the mask only support phones from:
 * United States
@@ -11,18 +13,23 @@ At the moment the mask only support phones from:
 We'll be adding more countries in the future. If you want your country to be available now, just let us a message at contacto@engranaje.me.
 
 ## Getting started
-To include Maskie into your project you just need to include the **Maskie.js** file inside **dist** folder, and include the **mask.html** file into your form, or just copy the **mask.html** content into your form.
-It's important to use the content inside the mask as it is, because the code will only work with it's properties.
+To include Maskie in your project, you only need to include the **Maskie.js** field inside **dist** folder before your personal scripts, then initialize it.
 
-We added the mask inside a div with class `d-flex`, so if you want both select and input to be together, just apply a `display: flex` style.
+To initialize Maskie with default values, you just need to call the function Maskie();`.
 
-This project works wih JQuery, so you'll need to include it first.
+The options you can provide to the function are:
+1. `selector` Which allows you to specify the class of the inputs that will be changed by the Maskie tags. The default value is *maskie-phone*.
+2. `codeType` Which allows you to specify the type of label for the phone code. Possible values are `input` or `select`; the default value is *select*.
+3. `country` Which allows you to specify the phone code menu options if it is of type *select*. The value must be the three-digit country code. The default value is *USA*.
 
-To configure the mask you just need:
-1. Change the input type phone's **data-country** value to your country three digit's ISO code.
-2. Add the required **name** and **id** attributes to the inputs and select if you want to retrieve the data separately or to apply styles.
-3. Add any other wanted propertied, like **required**, if wanted.
-4. Catch the value of the hidden input named **planephone**, because that's the input with the full phone without special characters. Or just concatenate Both values of the select and the phone input.
+Configuration example:
+```
+Maskie({
+    selector: input-class,
+    codeType: 'select',
+    country: 'MEX'
+});
+```
 
 # Authors
 * **Engranaje's team**
